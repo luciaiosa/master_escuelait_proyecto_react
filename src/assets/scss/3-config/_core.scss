@@ -1,0 +1,19 @@
+@use '../1-settings/global';
+@use '../2-tools/mixins';
+html {
+    height: 100%;
+    font-size: 100%;
+    text-size-adjust: none;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: global.$ff-base;
+    color: var(--fc-base);
+    background-color: var(--bc-base);
+}
+
+pre {
+    font-family: global.$ff-base;
+}

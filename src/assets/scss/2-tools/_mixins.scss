@@ -1,0 +1,151 @@
+@use 'sass:map';
+@use '../1-settings/global';
+@use 'functions' as func;
+
+@mixin media-breakpoint($name) {
+    @if map-has-key(global.$breakpoints, $name) {
+        @media (max-width: func.em(map-get(global.$breakpoints, $name))) {
+            @content;
+        }
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{global.$breakpoints}`. "+"Please make sure it is defined in `$breakpoints` map.";
+    }
+}
+
+@mixin getFontBodyConfig($size) {
+    font-family: global.$ff-base;
+    font-size: func.rem(map.get(global.$body-config, 'fontSize', $size));
+    line-height: map.get(global.$body-config, 'lineHeight', $size);
+}
+
+@mixin getFontTitleConfig($size) {
+    font-family: global.$ff-base;
+    font-size: func.rem(map.get(global.$title-config, 'fontSize', $size));
+    line-height: map.get(global.$title-config, 'lineHeight', $size);
+}
+
+@mixin getFontCaptionConfig($size) {
+    font-family: global.$ff-base;
+    font-size: func.rem(map.get(global.$caption-config, 'fontSize', $size));
+    line-height: map.get(global.$caption-config, 'lineHeight', $size);
+}
+
+@mixin ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin noEllipsis {
+    text-overflow: clip;
+    white-space: normal;
+    word-break: break-word;
+}
+
+@mixin getGridLayout {
+    display: grid;
+    height: 100%;
+
+    grid-template-rows: auto 1fr;
+    row-gap: func.rem(24);
+    margin-left: func.rem(32);
+    justify-items: end;
+}
+
+@mixin getHeightWithSubmenu {
+    height: calc(100% - 55px);
+}
+
+@mixin getGenericPadding {
+    padding: func.rem(44) func.rem(52) func.rem(24) func.rem(20);
+}
+
+@mixin getFormStyles {
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex: 1;
+        min-width: 0;
+        min-height: 0;
+        overflow-x: hidden;
+
+        .form-content {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+            flex-direction: column;
+            gap: func.rem(24);
+            width: 100%;
+            overflow-x: hidden;
+            padding: 0 func.rem(32) func.rem(32) func.rem(32);
+
+            &--full-width {
+                padding: 0 func.rem(8) 0 0;
+            }
+        }
+
+        .form-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            gap: func.rem(16);
+            height: func.rem(60);
+            padding: 0 func.rem(32);
+        }
+    }
+
+    .form-layout-columns {
+        display: grid;
+        column-gap: func.rem(12);
+        row-gap: func.rem(24);
+        width: 100%;
+    }
+
+    .form-layout-2-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-layout-3-columns {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .form-layout-4-columns {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@mixin getPanelDetailsStyles {
+    .detail-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 0 func.rem(32) func.rem(32) func.rem(32);
+
+        &--full-width {
+            padding: 0 func.rem(8) 0 0;
+        }
+    }
+
+    .detail-actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 16px;
+        height: func.rem(60);
+        padding: 0 func.rem(16);
+    }
+
+    .panel__body {
+        .detail-content {
+            :first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}

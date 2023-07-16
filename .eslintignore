@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+dist/
+build/
+*.local
+*.tsbuildinfo
+node_modules/*
+.eslintcache
+.cache-eslint/
+.storybook/
+docs/
+nginx/
+scripts/
+public/
+src/serviceWorker.ts
+**/*.json
+apiService.generated

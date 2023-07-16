@@ -1,0 +1,109 @@
+body {
+    /* Fonts */
+    --fc-white: var(--c-white);
+    --fc-base: var(--c-neutral-100);
+    --fc-secondary: var(--c-neutral-200);
+    --fc-error: var(--c-error);
+
+    --fontColorTitles: var(--c-neutral-100);
+    --fontColorTitlesSecondary: var(--c-neutral-50);
+    --fontColorBody: var(--c-neutral-200);
+    --fontColorBodySecondary: var(--c-neutral-400);
+    --fontColorDisabled: var(--c-neutral-600);
+
+    --bc-base: var(--c-neutral-900);
+    --background-primary: var(--c-neutral-900);
+    --bc-secondary: var(--c-neutral-800);
+    --border-base: var(--c-neutral-700);
+
+    /*Icon Button*/
+    --icon-button-primary-bg-color: transparent;
+    --icon-button-primary-color: var(--c-neutral-400);
+    --icon-button-secondary-bg-color: var(--c-neutral-750);
+    --icon-button-secondary-color: var(--c-neutral-300);
+    --icon-button-hover-bg-color: var(--c-neutral-600);
+    --icon-button-hover-color: var(--c-neutral-100);
+    --icon-button-active-bg-color: var(--c-neutral-950);
+    --icon-button-active-color: var(--c-neutral-400);
+    --icon-button-selected-bg-color: var(--c-primary-700);
+    --icon-button-selected-color: var(--c-neutral-50);
+    --icon-button-disabled-bg-color: transparent;
+    --icon-button-disabled-color: var(--c-neutral-600);
+    --icon-button-secondary-disabled-bg: var(--c-neutral-800);
+
+    /*Button*/
+    --button-icon-bg-color: transparent;
+    --button-icon-bg-color-hover: transparent;
+    --button-icon-bg-color-active: transparent;
+    --button-icon-bg-color-disabled: transparent;
+    --button-icon-text-color: var(--c-white);
+    --button-icon-text-color-hover: var(--c-white);
+    --button-icon-text-color-active: var(--c-accent-2);
+    --button-icon-text-color-disabled: rgba(var(--c-white-rgb), 0.3);
+
+    --button-icon-icon-color: var(--c-accent-2-light);
+    --button-icon-icon-color-hover: var(--c-white);
+    --button-icon-icon-color-active: var(--c-accent-2);
+    --button-icon-icon-color-disabled: rgba(var(--c-white-rgb), 0.3);
+
+    /* Complementary/UI colors */
+    --c-default-icon: #747c85;
+    --c-default-icon-hover: var(--c-white);
+
+    /*Dorlet*/
+    --dorlet-wrapper-bg: var(--main-bg);
+    --dorlet-block-bg: var(--secondary-bg);
+    --dorlet-block-form-actions-border-top: var(--secondary-bg);
+
+    /*Dorlet paginator*/
+    --dorlet-paginator-font-color: var(--c-white);
+
+    /*Dorlet form*/
+    --form-section-title-color: var(--c-accent-2-light);
+    --form-column-icon-color: var(--body-secondary);
+
+    /*Dorlet Block*/
+    --dorlet-block-header-title-color: var(--c-white);
+
+    /* Dorlet Tree */
+    --node-background-color: var(--c-neutral-900);
+    --node-border-color-hover: var(--c-primary-500);
+    --node-bg-color-selected: var(--c-neutral-750);
+    --node-level-label-color: var(--c-neutral-300);
+    --node-content-label-color: var(--c-white);
+    --node-content-label-color-selected: var(--c-primary-300);
+    --node-color-actions: var(--c-neutral-400);
+
+    /* Modal */
+    --overlay-modal: rgba(var(--c-black-rgb), 0.7);
+
+    /* Submenu */
+    --submenu-item-default: var(--c-neutral-400);
+    --submenu-item-active: var(--c-neutral-50);
+
+    /* Menu tabs */
+    --menu-tabs-bg-color-default: var(--c-neutral-750);
+    --menu-item-color-default: var(--c-neutral-300);
+    --menu-item-color-active: var(--c-neutral-1000);
+    --menu-item-bc-color-active: var(--c-neutral-300);
+    --menu-item-color-hover: var(--c-neutral-300);
+    --menu-item-bc-color-hover: var(--c-neutral-600);
+
+    /* Menu buttons */
+    --menu-button-color-active: var(--c-neutral-300);
+    --menu-button-bg-color-active: var(--c-neutral-900);
+    --menu-button-bg-color-hover: var(--c-neutral-1000);
+
+    // Form fiel
+    --form-label-color: var(--c-neutral-300);
+
+    // Table
+    --table-title-th-color: var(--c-neutral-400);
+    --table-title-td-color: var(--c-neutral-200);
+
+    // Grid
+    --grid-action-color: var(--c-neutral-200);
+    --grid-action-bg-color-hover: var(--c-neutral-600);
+    --grid-action-color-hover: var(--c-neutral-100);
+    --grid-action-color-active: var(--c-neutral-100);
+}

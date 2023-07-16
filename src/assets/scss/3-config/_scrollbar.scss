@@ -1,0 +1,23 @@
+@use '../2-tools/functions';
+
+* {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        border-radius: functions.rem(4);
+        width: functions.rem(6);
+        height: functions.rem(6);
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 0;
+        border: 1px solid var(--c-neutral-750);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--c-neutral-750);
+        border-radius: functions.rem(4);
+        border: 1px solid var(--c-neutral-750);
+    }
+}

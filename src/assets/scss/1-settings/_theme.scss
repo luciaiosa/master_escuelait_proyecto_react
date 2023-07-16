@@ -1,0 +1,267 @@
+[data-theme='dark'] {
+    /*Grays Palette*/
+    --c-white: #fff;
+    --c-white-rgb: 255, 255, 255;
+    --c-neutral-50: #f2f2f2;
+    --c-neutral-100: #e6e6e6;
+    --c-neutral-200: #d1d1d1;
+    --c-neutral-300: #b3b3b3;
+    --c-neutral-400: #949494;
+    --c-neutral-500: #7a7a7a;
+    --c-neutral-600: #575757;
+    --c-neutral-700: #454545;
+    --c-neutral-750: #3b3b3b;
+    --c-neutral-800: #363636;
+    --c-neutral-900: #292929;
+    --c-neutral-950: #242424;
+    --c-neutral-1000: #1a1a1a;
+    --c-black: #000;
+    --c-black-rgb: 0, 0, 0;
+
+    /*Primary Palette*/
+    --c-primary: #86268c;
+    --c-primary-00: color-mix(in srgb, var(--c-primary), white 90%);
+    --c-primary-100: color-mix(in srgb, var(--c-primary), white 80%);
+    --c-primary-200: color-mix(in srgb, var(--c-primary), white 65%);
+    --c-primary-300: color-mix(in srgb, var(--c-primary), white 40%);
+    --c-primary-400: color-mix(in srgb, var(--c-primary), white 20%);
+    --c-primary-500: var(--c-primary);
+    --c-primary-600: color-mix(in srgb, var(--c-primary), #1a1a1a 20%);
+    --c-primary-700: color-mix(in srgb, var(--c-primary), #1a1a1a 40%);
+    --c-primary-800: color-mix(in srgb, var(--c-primary), #1a1a1a 60%);
+    --c-primary-900: color-mix(in srgb, var(--c-primary), #1a1a1a 70%);
+    --c-primary-950: color-mix(in srgb, var(--c-primary), #1a1a1a 80%);
+    --c-primary-1000: color-mix(in srgb, var(--c-primary), #1a1a1a 90%);
+
+    /*Secondary Palette*/
+    --c-secondary: #55328e;
+    --c-secondary-00: color-mix(in srgb, var(--c-secondary), white 90%);
+    --c-secondary-100: color-mix(in srgb, var(--c-secondary), white 80%);
+    --c-secondary-200: color-mix(in srgb, var(--c-secondary), white 65%);
+    --c-secondary-300: color-mix(in srgb, var(--c-secondary), white 40%);
+    --c-secondary-400: color-mix(in srgb, var(--c-secondary), white 20%);
+    --c-secondary-500: var(--c-secondary);
+    --c-secondary-600: color-mix(in srgb, var(--c-secondary), #1a1a1a 20%);
+    --c-secondary-700: color-mix(in srgb, var(--c-secondary), #1a1a1a 40%);
+    --c-secondary-800: color-mix(in srgb, var(--c-secondary), #1a1a1a 60%);
+    --c-secondary-900: color-mix(in srgb, var(--c-secondary), #1a1a1a 70%);
+    --c-secondary-950: color-mix(in srgb, var(--c-secondary), #1a1a1a 80%);
+    --c-secondary-1000: color-mix(in srgb, var(--c-secondary), #1a1a1a 90%);
+
+    /*Tertiary Palette*/
+    --c-tertiary: #3d4e98;
+    --c-tertiary-00: color-mix(in srgb, var(--c-tertiary), white 90%);
+    --c-tertiary-100: color-mix(in srgb, var(--c-tertiary), white 80%);
+    --c-tertiary-200: color-mix(in srgb, var(--c-tertiary), white 65%);
+    --c-tertiary-300: color-mix(in srgb, var(--c-tertiary), white 40%);
+    --c-tertiary-400: color-mix(in srgb, var(--c-tertiary), white 20%);
+    --c-tertiary-500: var(--c-tertiary);
+    --c-tertiary-600: color-mix(in srgb, var(--c-tertiary), #1a1a1a 20%);
+    --c-tertiary-700: color-mix(in srgb, var(--c-tertiary), #1a1a1a 40%);
+    --c-tertiary-800: color-mix(in srgb, var(--c-tertiary), #1a1a1a 60%);
+    --c-tertiary-900: color-mix(in srgb, var(--c-tertiary), #1a1a1a 70%);
+    --c-tertiary-950: color-mix(in srgb, var(--c-tertiary), #1a1a1a 80%);
+    --c-tertiary-1000: color-mix(in srgb, var(--c-tertiary), #1a1a1a 90%);
+
+    /*Success Palette*/
+    --c-functional-positive-00: #e6f7ea;
+    --c-functional-positive-100: #bbe9c6;
+    --c-functional-positive-200: #90daa6;
+    --c-functional-positive-300: #66ca8a;
+    --c-functional-positive-400: #3cb971;
+    --c-functional-positive-500: #13a85b;
+    --c-functional-positive-600: #0e8d53;
+    --c-functional-positive-700: #097148;
+    --c-functional-positive-800: #05543a;
+    --c-functional-positive-900: #033628;
+
+    /*Info Palette*/
+    --c-functional-info-00: #e6f9ff;
+    --c-functional-info-100: #b8e9fe;
+    --c-functional-info-200: #8ad2fc;
+    --c-functional-info-300: #5cb7f9;
+    --c-functional-info-400: #2e96f5;
+    --c-functional-info-500: #0070f0;
+    --c-functional-info-600: #005ac0;
+    --c-functional-info-700: #004390;
+    --c-functional-info-800: #002d60;
+    --c-functional-info-900: #002248;
+
+    /*Warning Palette*/
+    --c-functional-warning-00: #fdf5e4;
+    --c-functional-warning-100: #ffecc7;
+    --c-functional-warning-200: #fedb96;
+    --c-functional-warning-300: #fecf70;
+    --c-functional-warning-400: #ffc247;
+    --c-functional-warning-500: #fcaa07;
+    --c-functional-warning-600: #d88b05;
+    --c-functional-warning-700: #ab6907;
+    --c-functional-warning-800: #734406;
+    --c-functional-warning-900: #4a2a04;
+
+    /*Error Palette*/
+    --c-functional-negative-00: #f9e9e5;
+    --c-functional-negative-100: #f9d3c9;
+    --c-functional-negative-200: #f2aea2;
+    --c-functional-negative-300: #eb867c;
+    --c-functional-negative-400: #e25c58;
+    --c-functional-negative-500: #d83439;
+    --c-functional-negative-600: #b52932;
+    --c-functional-negative-700: #901e29;
+    --c-functional-negative-800: #6b1520;
+    --c-functional-negative-900: #440c15;
+
+    /*Status Devices*/
+    --c-status-out-of-service: #f2d80f;
+    --c-status-failure: #fcaa07;
+    --c-status-disconnected: #d83439;
+    --c-status-forced: #f45c36;
+    --c-status-forced-door: #e75678;
+    --c-status-close: #b734bf;
+    --c-status-battery: #7255e6;
+    --c-status-connected: #13a85b;
+    --c-status-pendindg-init: #2fb094;
+    --c-status-open: #2e96f5;
+    --c-status-not-reset: #62dbf6;
+
+    /*Status alarm*/
+    --c-status-alarm-quarantine: #fcaa07;
+    --c-status-alarm-unattended: #f45c36;
+    --c-status-alarm-disconnected: #d83439;
+    --c-status-alarm-completed: #13a85b;
+    --c-status-alarm-under-treatment: #0070f0;
+}
+
+[data-theme='light'] {
+    /*Grays Palette*/
+    --c-black: #000;
+    --c-black-rgb: 0, 0, 0;
+    --c-neutral-50: #1a1a1a;
+    --c-neutral-100: #242424;
+    --c-neutral-200: #292929;
+    --c-neutral-300: #363636;
+    --c-neutral-400: #3b3b3b;
+    --c-neutral-500: #454545;
+    --c-neutral-600: #575757;
+    --c-neutral-700: #7a7a7a;
+    --c-neutral-750: #949494;
+    --c-neutral-800: #b3b3b3;
+    --c-neutral-900: #d1d1d1;
+    --c-neutral-950: #e6e6e6;
+    --c-neutral-1000: #f2f2f2;
+    --c-white: #fff;
+    --c-white-rgb: 255, 255, 255;
+
+    /*Primary Palette*/
+    --c-primary: #86268c;
+    --c-primary-00: color-mix(in srgb, var(--c-primary), #1a1a1a 90%);
+    --c-primary-100: color-mix(in srgb, var(--c-primary), #1a1a1a 80%);
+    --c-primary-200: color-mix(in srgb, var(--c-primary), #1a1a1a 65%);
+    --c-primary-300: color-mix(in srgb, var(--c-primary), #1a1a1a 40%);
+    --c-primary-400: color-mix(in srgb, var(--c-primary), #1a1a1a 20%);
+    --c-primary-500: var(--c-primary);
+    --c-primary-600: color-mix(in srgb, var(--c-primary), white 20%);
+    --c-primary-700: color-mix(in srgb, var(--c-primary), white 40%);
+    --c-primary-800: color-mix(in srgb, var(--c-primary), white 60%);
+    --c-primary-900: color-mix(in srgb, var(--c-primary), white 70%);
+    --c-primary-950: color-mix(in srgb, var(--c-primary), white 80%);
+    --c-primary-1000: color-mix(in srgb, var(--c-primary), white 90%);
+
+    /*Secondary Palette*/
+    --c-secondary: #55328e;
+    --c-secondary-00: color-mix(in srgb, var(--c-secondary), #1a1a1a 90%);
+    --c-secondary-100: color-mix(in srgb, var(--c-secondary), #1a1a1a 80%);
+    --c-secondary-200: color-mix(in srgb, var(--c-secondary), #1a1a1a 65%);
+    --c-secondary-300: color-mix(in srgb, var(--c-secondary), #1a1a1a 40%);
+    --c-secondary-400: color-mix(in srgb, var(--c-secondary), #1a1a1a 20%);
+    --c-secondary-500: var(--c-secondary);
+    --c-secondary-600: color-mix(in srgb, var(--c-secondary), white 20%);
+    --c-secondary-700: color-mix(in srgb, var(--c-secondary), white 40%);
+    --c-secondary-800: color-mix(in srgb, var(--c-secondary), white 60%);
+    --c-secondary-900: color-mix(in srgb, var(--c-secondary), white 70%);
+    --c-secondary-950: color-mix(in srgb, var(--c-secondary), white 80%);
+    --c-secondary-1000: color-mix(in srgb, var(--c-secondary), white 90%);
+
+    /*Tertiary Palette*/
+    --c-tertiary: #3d4e98;
+    --c-tertiary-00: color-mix(in srgb, var(--c-tertiary), #1a1a1a 90%);
+    --c-tertiary-100: color-mix(in srgb, var(--c-tertiary), #1a1a1a 80%);
+    --c-tertiary-200: color-mix(in srgb, var(--c-tertiary), #1a1a1a 65%);
+    --c-tertiary-300: color-mix(in srgb, var(--c-tertiary), #1a1a1a 40%);
+    --c-tertiary-400: color-mix(in srgb, var(--c-tertiary), #1a1a1a 20%);
+    --c-tertiary-500: var(--c-tertiary);
+    --c-tertiary-600: color-mix(in srgb, var(--c-tertiary), white 20%);
+    --c-tertiary-700: color-mix(in srgb, var(--c-tertiary), white 40%);
+    --c-tertiary-800: color-mix(in srgb, var(--c-tertiary), white 60%);
+    --c-tertiary-900: color-mix(in srgb, var(--c-tertiary), white 70%);
+    --c-tertiary-950: color-mix(in srgb, var(--c-tertiary), white 80%);
+    --c-tertiary-1000: color-mix(in srgb, var(--c-tertiary), white 90%);
+
+    /*Success Palette*/
+    --c-functional-positive-00: #e6f7ea;
+    --c-functional-positive-100: #bbe9c6;
+    --c-functional-positive-200: #90daa6;
+    --c-functional-positive-300: #66ca8a;
+    --c-functional-positive-400: #3cb971;
+    --c-functional-positive-500: #13a85b;
+    --c-functional-positive-600: #0e8d53;
+    --c-functional-positive-700: #097148;
+    --c-functional-positive-800: #05543a;
+    --c-functional-positive-900: #033628;
+
+    /*Info Palette*/
+    --c-functional-info-00: #e6f9ff;
+    --c-functional-info-100: #b8e9fe;
+    --c-functional-info-200: #8ad2fc;
+    --c-functional-info-300: #5cb7f9;
+    --c-functional-info-400: #2e96f5;
+    --c-functional-info-500: #0070f0;
+    --c-functional-info-600: #005ac0;
+    --c-functional-info-700: #004390;
+    --c-functional-info-800: #002d60;
+    --c-functional-info-900: #002248;
+
+    /*Warning Palette*/
+    --c-functional-warning-00: #fdf5e4;
+    --c-functional-warning-100: #ffecc7;
+    --c-functional-warning-200: #fedb96;
+    --c-functional-warning-300: #fecf70;
+    --c-functional-warning-400: #ffc247;
+    --c-functional-warning-500: #fcaa07;
+    --c-functional-warning-600: #d88b05;
+    --c-functional-warning-700: #ab6907;
+    --c-functional-warning-800: #734406;
+    --c-functional-warning-900: #4a2a04;
+
+    /*Error Palette*/
+    --c-functional-negative-00: #f9e9e5;
+    --c-functional-negative-100: #f9d3c9;
+    --c-functional-negative-200: #f2aea2;
+    --c-functional-negative-300: #eb867c;
+    --c-functional-negative-400: #e25c58;
+    --c-functional-negative-500: #d83439;
+    --c-functional-negative-600: #b52932;
+    --c-functional-negative-700: #901e29;
+    --c-functional-negative-800: #6b1520;
+    --c-functional-negative-900: #440c15;
+
+    /*Status Devices*/
+    --c-status-out-of-service: #f2d80f;
+    --c-status-failure: #fcaa07;
+    --c-status-disconnected: #d83439;
+    --c-status-forced: #f45c36;
+    --c-status-forced-door: #e75678;
+    --c-status-close: #b734bf;
+    --c-status-battery: #7255e6;
+    --c-status-connected: #13a85b;
+    --c-status-pendindg-init: #2fb094;
+    --c-status-open: #2e96f5;
+    --c-status-not-reset: #62dbf6;
+
+    /*Status alarm*/
+    --c-status-alarm-quarantine: #fcaa07;
+    --c-status-alarm-unattended: #f45c36;
+    --c-status-alarm-disconnected: #d83439;
+    --c-status-alarm-completed: #13a85b;
+    --c-status-alarm-under-treatment: #0070f0;
+}

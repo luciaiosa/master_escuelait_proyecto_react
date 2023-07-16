@@ -1,0 +1,62 @@
+@use 'sass:math';
+@use '../1-settings/global';
+
+$_media-query-units: em !default;
+$_browser-default-font-size: 16px !default;
+$_gutter: 8px !default;
+
+@function strip-unit($num) {
+    @return math.div($num, ($num * 0 + 1));
+}
+
+@function rem($value, $base-value: $_browser-default-font-size) {
+    $value: math.div(strip-unit($value), strip-unit($base-value)) * 1rem;
+
+    @if ($value==0) {
+        $value: 0;
+    }
+
+    @return $value;
+}
+
+@function em($size) {
+    $size: if(str-index(#{$size}, 'rem'), rem($size, true), $size);
+    $unitless: strip-unit($size);
+    $unitless-base: strip-unit($_browser-default-font-size);
+
+    @if $_media-query-units==em {
+        @return $unitless / $unitless-base * 1em;
+    } @else {
+        @return $size;
+    }
+}
+
+@function z($layer) {
+    @return map-get(global.$z-layers, $layer);
+}
+
+@function geticonsize($key) {
+    @return rem(map-get(global.$icons-size, $key));
+}
+
+@function getfontweight($key) {
+    @return map-get(global.$font-weight, $key);
+}
+
+@function fs($font-size) {
+    $font-size-result: map-get(global.$size-vars, $font-size);
+
+    @return rem($font-size-result);
+}
+
+@function sizer($multiplier: 1, $unit: 'rem') {
+    $unitless: $_gutter;
+
+    @if ($unit== 'rem') {
+        @return calc(rem($unitless) * $multiplier);
+    } @else if ($unit== 'em') {
+        @return calc(em($unitless) * $multiplier);
+    } @else {
+        @return calc($unitless * $multiplier);
+    }
+}

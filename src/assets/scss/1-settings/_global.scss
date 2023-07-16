@@ -1,0 +1,91 @@
+/* Z-index */
+$z-layers: (
+    spinner: 9005,
+    tooltip: 9004,
+    modal-content: 9003,
+    modal-overlay: 9002,
+    super: 9000,
+    above: 900,
+    default: 1,
+    below: -1,
+);
+
+/* Font-size */
+$size-vars: (
+    xsmall: 12px,
+    small: 14px,
+    regular: 15px,
+    base: 16px,
+    large: 18px,
+);
+/* Breakpoints */
+$breakpoints: (
+    xl: 1679px,
+    lg: 1365px,
+    md: 1279px,
+    sm: 1023px,
+    xs: 767px,
+);
+
+$font-weight: (
+    bold: 700,
+    semiBold: 600,
+    medium: 500,
+    regular: 400,
+    light: 300,
+);
+
+$body-config: (
+    'fontSize': (
+        XL: 15px,
+        L: 14px,
+        M: 13px,
+        S: 12px,
+    ),
+    'lineHeight': (
+        XL: 1.33,
+        L: 1.42,
+        M: 1.53,
+        S: 1.33,
+    ),
+);
+
+$title-config: (
+    'fontSize': (
+        XL: 24px,
+        L: 20px,
+        M: 18px,
+        S: 16px,
+    ),
+    'lineHeight': (
+        XL: 1.33,
+        L: 1.4,
+        M: 1.33,
+        S: 1.5,
+    ),
+);
+
+//Caption & overline sizes
+$caption-config: (
+    'fontSize': (
+        M: 11px,
+        S: 9px,
+    ),
+    'lineHeight': (
+        M: 1.45,
+        S: 1.33,
+    ),
+);
+
+$icons-size: (
+    S: 16,
+    M: 20,
+    L: 24,
+    XL: 28,
+    XXL: 40,
+    XXXL: 56,
+);
+
+/* Fonts */
+$ff-base: 'Fira Sans', Arial, sans-serif;
+$icons-font-family: 'dorlet icon';

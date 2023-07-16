@@ -1,0 +1,11 @@
+/* Settings: Incluimos ficheros de configuración de variables como fuentes, sizing, colores...*/
+@use '1-settings/fonts';
+@use '1-settings/theme';
+@use '1-settings/colors';
+
+/* Config:
+    reset styles, box-sizing definition, theme etc. In config should be included base configuration of the project */
+@use '3-config/reset';
+@use '3-config/box-sizing';
+@use '3-config/core';
+@use '3-config/scrollbar';

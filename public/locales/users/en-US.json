@@ -1,0 +1,21 @@
+{
+  "table": {
+    "name": "Name",
+    "firstSurname": "First Surname",
+    "lastSurname": "Second Surname",
+    "typeName": "Type",
+    "email": "Email",
+    "phone": "Phone",
+    "dni": "IDN"
+  },
+  "type": {
+    "Operator": "Operator",
+    "subcontractedOperator": "Subcontracted Operator",
+    "securityChief": "Security Chief",
+    "areaManager": "Area Manager",
+    "administration": "Administration"
+  },
+  "modal": {
+    "title": "Users"
+  }
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "111",
+        "email": "prueba@prueba.com",
+        "password": "Prueba1",
+        "favouriteSaveOnCloud": false
+    },
+    {
+        "id": "222",
+        "email": "test@test.com",
+        "password": "Test1+",
+        "favouriteSaveOnCloud": false
+    },
+    {
+        "id": "333",
+        "email": "user@test.com",
+        "password": "user1+",
+        "favouriteSaveOnCloud": true
+    }
+]
