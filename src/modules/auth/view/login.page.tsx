@@ -28,9 +28,13 @@ const Login: FunctionComponent = (): JSX.Element => {
         }
     }
 
+    const onCancel = () => {
+        navigate(-1);
+    }
+
     const renderContent = (): JSX.Element => {
         return (
-            <LoginForm onSubmit={onSubmit}></LoginForm>
+            <LoginForm onSubmit={onSubmit} onCancel={onCancel} ></LoginForm>
         );
     };
     const renderErrorMessage = (): JSX.Element | null => {

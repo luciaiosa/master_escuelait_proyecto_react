@@ -47,7 +47,6 @@ interface IMoviesResponse {
     Search: any[];
 }
 
-
 export type MovieDetail = IMovieDetail;
 export type MovieResume = IMovieResume;
 export type MovieSearchRequest = IMovieSearchRequest;

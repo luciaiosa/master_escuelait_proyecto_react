@@ -1,4 +1,4 @@
-import { FAVOURITE_MOVIES } from "@/shared/constants/constants";
+import { FAVOURITE_MOVIES } from "@/shared/constants";
 import { IFavouriteStoreStrategy } from "./favourite.store.strategy";
 import { UserProfileFavouriteMovie } from "../../domain/entities/user-profile.entity";
 import storageService from "@/shared/services/storage/storageService";

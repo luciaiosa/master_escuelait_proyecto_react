@@ -8,36 +8,11 @@ export const styles = makeStyles(() =>
             textAlign: 'center',
             color: "lightgrey",
         },
-        container: {
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "flex-start",
-            alignContent: "center",
-            overflow: "hidden",
-            flexDirection: "column",
-            minHeight: "75vh"
-        },
         gridList: {
             width: "100%",
             height: "auto",
             display: "flex",
             margin: "0 !important"
-        },
-        pageHeader: {
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            height: 90,
-            width: "100%"
-        },
-        pageHeaderMobile: {
-            display: "flex",
-            flexDirection: "column"
-        },
-        pageHeaderTitle: {
-            margin: 0,
-            marginBottom: 15,
-            marginTop: 15
         },
         description: {
             fontSize: "1.3rem",

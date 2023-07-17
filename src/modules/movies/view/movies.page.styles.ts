@@ -6,6 +6,15 @@ export const styles = makeStyles(() =>
         root: {
             flexGrow: 1
         },
+        container: {
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "flex-start",
+            alignContent: "center",
+            overflow: "hidden",
+            flexDirection: "column",
+            minHeight: "75vh"
+        },
         breadcrumbsContainer: {
             paddingLeft: 205,
             fontSize: 18,
@@ -29,7 +38,8 @@ export const styles = makeStyles(() =>
         },
         pageHeaderTitle: {
             margin: 0,
-            marginBottom: 15
+            marginBottom: 15,
+            marginTop: 15
         },
         description: {
             fontSize: "1.3rem",
@@ -101,7 +111,6 @@ export const styles = makeStyles(() =>
             justifyContent: "center",
             alignItems: "center",
             padding: "40px",
-            /* border: "1px solid #1dc9dd", */
             marginLeft: 35,
             marginBottom: 35,
             marginRight: 35
@@ -111,7 +120,6 @@ export const styles = makeStyles(() =>
             justifyContent: "space-evenly",
             alignItems: "center",
             padding: "15px",
-            /* border: "1px solid #1dc9dd", */
             marginLeft: 35,
             marginBottom: 35,
             marginRight: 35

@@ -1,26 +1,25 @@
-import "./movie.detail.scss";
-
+import { FunctionComponent, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 import {
     Button,
     Card,
     Divider,
     Typography,
 } from "@mui/material";
-import { FunctionComponent, useEffect } from "react";
-import { MovieStore, clearSelectedMovie, getMovieByIdRequest, removeFavouriteMovie, setFavouriteMovie } from "@/stores/movies";
-import { useDispatch, useSelector } from "react-redux";
 
+import userService from "@/modules/user-profile/infrastructure/services/user.service";
+import authService from "@/modules/auth/infrastructure/services/auth.service";
+import { moviesRoute } from "@/modules/app.routes";
+import { MovieStore, clearSelectedMovie, getMovieByIdRequest, removeFavouriteMovie, setFavouriteMovie } from "@/stores/movies";
 import { AppStore } from "@/stores/app";
 import CustomError from "@/shared/components/error/Error";
 import { Favourite } from "@/shared/components/favourite/Favourite";
-import { Link } from "react-router-dom";
-import { MovieDetailInfo } from "../detail-info/movie.detail.info";
 import { Rating } from "@/shared/types/rating";
 import { Ratings } from "@/shared/components/ratings/Ratings";
-import authService from "@/modules/auth/infrastructure/services/auth.service";
-import { moviesRoute } from "@/modules/app.routes";
-import { useParams } from "react-router";
-import userService from "@/modules/user-profile/infrastructure/services/user.service";
+import { MovieDetailInfo } from "../detail-info/movie.detail.info";
+import "./movie.detail.scss";
 
 const MovieDetail: FunctionComponent = (): JSX.Element => {
     const dispatch = useDispatch();

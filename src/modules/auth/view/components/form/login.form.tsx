@@ -1,26 +1,26 @@
+import { FunctionComponent } from "react";
+import { useForm } from "react-hook-form";
+import { Button } from "@material-ui/core";
+
+import { IUser } from "@/modules/auth/domain/interfaces/user.interface";
 import "./login.form.scss";
 
-import { Button } from "@material-ui/core";
-import { FunctionComponent } from "react";
-import { IUser } from "@/modules/login/domain/interfaces/user.interface";
-import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
 
 interface ILoginFormProps {
     onSubmit(data: IUser): void;
+    onCancel(): void;
 }
 
 const LoginForm: FunctionComponent<ILoginFormProps> = (props): JSX.Element => {
     const { handleSubmit, register, errors } = useForm();
-    const navigate = useNavigate();
 
     const onSubmit = (values: any) => {
         props.onSubmit(values);
     };
 
     const onCancel = () => {
-        navigate(-1);
-    };
+        props.onCancel();
+    }
 
     const labelFieldClassName = (field: string) => errors && errors[field] ? "field-label-invalid" : "label";
     const inputFieldClassName = (field: string) => errors && errors[field] ? "field-input-invalid" : "input";
